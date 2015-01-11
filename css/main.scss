@@ -1,0 +1,342 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+
+$blue: rgba(34,163,159,1);
+$black: #222222;
+$Montserrat: 'Montserrat', sans-serif;
+$Open-Sans: 'Open Sans', sans-serif;
+
+
+
+// Header page-----------------
+
+
+header {
+  background-image: url('/../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+
+
+    .container{
+      position: relative;
+      top: 35%;
+      text-align: center;
+      z-index: 3;
+      padding: 0 20vw;
+      font-family: $Montserrat;
+      color: white;
+
+      h1{
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.8);
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 5em;
+      }
+
+      h4{
+        font-weight: 400;
+        font-size: 25px;
+      }
+    }
+
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $blue;
+      opacity: 0.8;
+      z-index: 2;
+    }
+
+    a{
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: 5%;
+      height: 80px;
+      width: 100px;
+      text-align: center;
+      background-color: $black;
+      z-index: 4;
+
+      span{
+        margin-top: 30px;
+        font-size: 30px;
+        color: white;
+      }
+    }
+
+}
+
+
+// Navbar------------------------
+
+#vertical-nav{
+  top: 5%;
+  right: 5%;
+  width: 100px;
+  color: white;
+  background-color: $black;
+  border: none;
+  border-radius: 0px;
+  z-index: 10;
+  transition: all 2s ease-in-out;
+
+  .navbar-collapse{
+    padding: 0px;
+  }
+
+  li{
+    height: 80px;
+    width: 100px;
+    text-align: center;
+  }
+
+
+  a{
+    padding-top: 1.5em;
+    height: 100%;
+    font-family: $Montserrat;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+  }
+
+  .active a{
+    background-color: $blue;
+  }
+}
+
+
+
+// Profile-------------
+
+#profile{
+  padding: 5vw 10vw;
+  font-family: $Open-Sans;
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: $blue;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  .byline{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  hr{
+    margin-bottom: 20px;
+  }
+
+  h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: $blue;
+  }
+
+  img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid $blue;
+  }
+}
+
+
+
+// Skills-------------------
+
+#skills{
+  padding: 5vw 10vw;
+  font-family: $Open-Sans;
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: $blue;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  hr{
+    margin-bottom: 40px;
+  }
+
+  li{
+    padding: 4px 0px;
+
+    &:hover{
+      background-color: #F2F2F2;
+
+      .glyphicon {
+        margin-left: 3px;
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+
+    .skill{
+      font-size: 17px;
+    }
+
+    .rating{
+      display: block;
+      float: right;
+
+      .fill{
+        vertical-align: middle;
+        color: $blue;
+      }
+
+      .unfill{
+        vertical-align: middle;
+        color: #DFE0E0;
+      }
+    }
+  }
+}
+
+
+// Projects-----------------
+
+#projects{
+  padding: 5vw 5vw;
+  font-family: $Open-Sans;
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: $blue;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  hr{
+    margin-bottom: 40px;
+  }
+
+  .col-md-6{
+    margin-bottom: 50px;
+  }
+
+  .thumbnail{
+    position: relative;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    min-height: 400px;
+
+    img{
+      height: 400px;
+    }
+
+    figcaption{
+      color: white;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding: 2em;
+      background-color: rgba(34,163,159,0.8);
+      display: none;
+      z-index: 100;
+
+      h2{
+        font-family: $Montserrat;
+      }
+
+      p{
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+
+    }
+  }
+  figure:hover figcaption{
+    display: block;
+  }
+
+  figure:hover img{
+    opacity: 1;
+  }
+}
+
+// Modals------------------
+
+.modal{
+
+  #myModalLabel{
+    text-align: center;
+    font-family: $Montserrat;
+    font-size: 21px;
+    color: $blue;
+  }
+
+  .screenshot{
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .modal-footer{
+    text-align: center;
+
+    a{
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+// Contact-------------------------
+
+#contact{
+  padding: 5vw 5vw;
+  font-family: $Open-Sans;
+
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: $blue;
+    font-weight: 400;
+    font-size: 50px;
+  }
+
+  hr{
+    margin-bottom: 40px;
+  }
+
+  .row{
+    text-align: center;
+
+    a{
+      margin: 0px 75px;
+      color: #89919c;
+
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
+}
