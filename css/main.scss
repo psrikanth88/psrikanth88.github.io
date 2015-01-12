@@ -5,6 +5,9 @@
 
 
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 
 $blue: rgba(34,163,159,1);
 $black: #222222;
@@ -17,7 +20,7 @@ $Open-Sans: 'Open Sans', sans-serif;
 
 
 header {
-  background-image: url('/../assets/background.jpg');
+  background-image: image-url('background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -290,8 +293,23 @@ header {
   #myModalLabel{
     text-align: center;
     font-family: $Montserrat;
-    font-size: 21px;
+    font-size: 28px;
     color: $blue;
+  }
+
+  .modal-dialog{
+    width: 40%;
+  }
+
+  p{
+    font-family: $Open-Sans;
+    font-size: 1.4em;
+  }
+
+  .modal-body h4{
+    font-family: $Montserrat;
+    font-size: 21px;
+    margin-top: 20px;
   }
 
   .screenshot{
@@ -331,7 +349,7 @@ header {
     text-align: center;
 
     a{
-      margin: 0px 75px;
+      margin: 0px 3.5em;
       color: #89919c;
 
       &:hover{

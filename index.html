@@ -194,12 +194,14 @@ layout: default
     <div class="col-md-6">
       <a href="#"  data-toggle="modal" data-target="#myModal">
         <figure class="thumbnail">
-          <img src="http://sourcefed.com/wp-content/uploads/2012/11/black_ops_2_hd_wallpaper-600x400.jpg" alt="">
+          <!-- <img src="http://sourcefed.com/wp-content/uploads/2012/11/black_ops_2_hd_wallpaper-600x400.jpg" alt=""> -->
+          <img src="/assets/book-logo.jpg" alt="" class="img-responsive">
           <figcaption>
           <h2>BooKonnect</h2>
           <hr>
           <p>Platform to help you discover the books your friends have and make people who share reading taste as yours.
           </p>
+          <p style="float: right"><b>Read More</b></p>
         </figcaption>
         </figure>
         </a>
@@ -207,32 +209,47 @@ layout: default
     <div class="col-md-6">
       <a href="#" data-toggle="modal" data-target="#myModal2">
         <figure class="thumbnail">
-          <img src="http://images4.fanpop.com/image/photos/23200000/Fantasy-Wolf-fantasy-23244805-718-555.jpg" alt="">
+          <!-- <img src="http://images4.fanpop.com/image/photos/23200000/Fantasy-Wolf-fantasy-23244805-718-555.jpg" alt=""> -->
+          <img src="/assets/wolf.jpg" alt="" class="img-responsive">
           <figcaption>
             <h2>Wolf App</h2>
             <hr>
             <p>Game Moderator App for Wolf/Mafia party game.
             </p>
+            <p style="float: right"><b>Read More</b></p>
           </figcaption>
         </figure>
       </a>
     </div>
     <div class="col-md-6">
-      <figure class="thumbnail">
-        <img src="http://buypoe.com/home/wp-content/uploads/2012/11/pirate_bay_271110-600x400.jpg" alt="">
-        <figcaption>
-          <h2>Torrentify</h2>
-          <hr>
-          <p>Dynamic Firefox extension for making API calls in real time to return p2p magnet links
-          </p>
-        </figcaption>
-      </figure>
+      <a href="https://github.com/cryptosforacause/Torrentify" target="blank">
+        <figure class="thumbnail">
+          <img src="http://buypoe.com/home/wp-content/uploads/2012/11/pirate_bay_271110-600x400.jpg" alt="">
+          <figcaption class="img-responsive">
+            <h2>Torrentify</h2>
+            <hr>
+            <p>Dynamic Firefox extension for making API calls in real time to return p2p magnet links
+            </p>
+            <p style="float: right"><b>Source Code</b></p>
+          </figcaption>
+        </figure>
+    </div>
+    <div class="col-md-6">
+      <a href="#" data-toggle="modal" data-target="#myModal3">
+        <figure class="thumbnail">
+          <img src="/assets/flames-love.jpg" alt="" class="img-responsive">
+          <figcaption>
+            <h2>Flames</h2>
+            <hr>
+            <p>A nostalgic childhood game testing the realtionship between two persons.</p>
+            <p style="float: right"><b>Read More</b></p>
+          </figcaption>
+        </figure>
+      </a>
     </div>
     
   </div>
 </section>
-
-
 
 <nav class="navbar navbar-default " id="vertical-nav">
   <div class="navbar-header">
@@ -265,12 +282,12 @@ layout: default
       <div class="modal-body">
         <p>Platform to help you discover the books your friends have and make people who share reading taste as yours.</p>
         <h4>Screenshots</h4>
-        <img src="/assets/bookonnect1.jpg" alt="" class="screenshot">
-        <img src="/assets/bookonnect2.jpg" alt="" class="screenshot">
+        <img src="/assets/bookonnect1.png" alt="" class="screenshot">
+        <img src="/assets/bookonnect2.png" alt="" class="screenshot">
       </div>
       <div class="modal-footer">
-        <a href="http://bookonnect.herokuapp.com" target="blank"><button type="button" class="btn btn-success" data-dismiss="modal">Demo</button></a>
-        <a href="https://github.com/rohitdg/bookonnect" target="blank"><button type="button" class="btn btn-info">Source Code</button></a>
+        <a href="http://bookonnect.herokuapp.com" target="blank"><button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Demo</button></a>
+        <a href="https://github.com/rohitdg/bookonnect" target="blank"><button type="button" class="btn btn-info btn-lg">Source Code</button></a>
       </div>
     </div>
   </div>
@@ -291,8 +308,29 @@ layout: default
         <img src="/assets/wolf2.png" alt="" class="screenshot">
       </div>
       <div class="modal-footer">
-        <a href="http://wolf-mafia.herokuapp.com" target="blank"><button type="button" class="btn btn-success" data-dismiss="modal">Demo</button></a>
-        <a href="https://github.com/psrikanth88/Wolf-App" target="blank"><button type="button" class="btn btn-info">Source Code</button></a>
+        <a href="http://wolf-mafia.herokuapp.com" target="blank"><button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Demo</button></a>
+        <a href="https://github.com/psrikanth88/Wolf-App" target="blank"><button type="button" class="btn btn-info btn-lg">Source Code</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Flames</h4>
+      </div>
+      <div class="modal-body">
+        <p>A nostalgic childhood game testing the realtionship between two persons.</p>
+        <h4>Screenshots</h4>
+        <img src="/assets/flames1.png" alt="" class="screenshot">
+        <img src="/assets/flames2.png" alt="" class="screenshot">
+      </div>
+      <div class="modal-footer">
+        <a href="http://flash-rails.herokuapp.com" target="blank"><button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Demo</button></a>
+        <a href="https://github.com/psrikanth88/Flames-Game-on-Rails" target="blank"><button type="button" class="btn btn-info btn-lg">Source Code</button></a>
       </div>
     </div>
   </div>
